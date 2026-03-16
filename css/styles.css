@@ -1,0 +1,122 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 137.4rem;
+  padding: 0 1.5rem;
+}
+
+.header__up {
+  font-size: 1.2rem;
+  line-height: 170%;
+  font-weight: 400;
+  color: #670a18;
+  padding: 1rem;
+  background-color: #f0eedd;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__down {
+  position: relative;
+  padding: 3rem;
+}
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 13.1rem;
+}
+.header__logo img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__block {
+  display: flex;
+  align-items: center;
+}
+.menu__link {
+  font-size: 1.3rem;
+  line-height: 170%;
+  font-weight: 700;
+  color: #35312e;
+  text-transform: uppercase;
+}
+.menu__link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.menu__circle {
+  font-size: 1.3rem;
+  line-height: 269%;
+  font-weight: 700;
+  color: #f5f1e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #c87b5e;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60.48rem;
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  background-position: left bottom;
+}
+.hero__content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.hero__subtitle {
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: 400;
+  color: #35312e;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+.hero__title {
+  font-size: 5rem;
+  line-height: 144%;
+  font-weight: 400;
+  color: #35312e;
+  margin-bottom: 5.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.hero__title span:last-child {
+  text-decoration: underline;
+}
+.hero__button {
+  width: 24.8rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 170%;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #d37657;
+  color: #ffffff;
+}
