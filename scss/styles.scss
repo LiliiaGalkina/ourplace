@@ -460,6 +460,7 @@ body {
     height: 48rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
   }
 
   // .dishes__img
@@ -505,4 +506,116 @@ body {
   &__button {
     @include button(20.6rem, 5.4rem, $colorTextWhite, $colorTextLightGrey);
   }
+}
+
+//footer
+.footer {
+background-color: $bgGreenFooter;
+padding: 8rem 0 11.4rem;
+color: $bgBeige;
+
+		// .footer__items
+
+		&__items {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+		}
+
+		// .footer__form
+
+		&__form {
+		}
+}
+
+.form {
+
+		// .form__title
+
+		&__title {
+      @include textFont(2.3rem, 251%, $bgBeige, 700);
+      margin-bottom: 1.1rem;
+		}
+
+		// .form__text
+
+		&__text {
+      @include textFont(1.4rem, 171%, $bgBeige);
+      margin-bottom: 6.22rem;
+		}
+
+		// .form__block
+
+		&__block {
+      display: flex;
+      gap: 0;
+		}
+
+		// .form__input
+
+		&__input {
+      @include textFont(1.3rem, 444.6% );
+      width: 34.7rem;
+      padding: 0.5rem 2rem;
+		}
+
+    &__button {
+      @include textFont(1.2rem, 100%, $colorTextLightGrey, 700);
+      background-color: $colorTextWhite;
+      width: 10.1rem;
+      text-transform: uppercase;
+    }
+}
+.navigation {
+
+		// .navigation__up
+
+		&__up {
+      margin-bottom: 5rem;
+      display: flex;
+      align-items: start;
+      gap: 2.8rem;
+		}
+
+			// .navigation__title
+
+		&__title {
+      @include textFont(1.2rem, 170%, $bgBeige, 700);
+      margin-bottom: 0.92rem;
+      text-transform: uppercase;
+		}
+
+		// .navigation__list
+
+		&__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.92rem;
+		}
+
+		// .navigation__link
+
+		&__link {
+      @include textFont(1.6rem, 191%, $bgBeige);
+      opacity: 0.6;
+      transition: all 0.5s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+		}
+
+		// .navigation__down-title
+
+		&__down-title {
+      @include textFont(1.2rem, 170%, $bgBeige, 700);
+      margin-bottom: 0.92rem;
+		}
+
+		// .navigation__down-images
+
+		&__down-images {
+      display: flex;
+      gap: 2.4rem;
+		}
 }
